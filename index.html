@@ -4,18 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-52BCBDEZEM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-52BCBDEZEM');
   </script>
-=======
->>>>>>> ed89cfbb52d2ee7986b93ce5ee61f8d927da914a
+
   <title>R. Pranav | Software Developer | MCA Student</title>
 
   <!-- Bootstrap 5 -->
@@ -29,6 +27,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
 
@@ -544,19 +543,24 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-7">
           <div class="card border-0 shadow-lg p-3 p-md-5 rounded-4 contact-card">
-            <form>
+            <form action="https://formspree.io/f/xlggnekj" method="POST">
               <div class="mb-4">
-                <input type="text" class="form-control form-control-lg bg-light border-0 py-3 px-4 rounded-3"
-                  placeholder="Your Name" required>
+                <input type="text" name="name"
+                  class="form-control form-control-lg bg-light border-0 py-3 px-4 rounded-3" placeholder="Your Name"
+                  required>
               </div>
               <div class="mb-4">
-                <input type="email" class="form-control form-control-lg bg-light border-0 py-3 px-4 rounded-3"
-                  placeholder="Your Email" required>
+                <input type="email" name="email"
+                  class="form-control form-control-lg bg-light border-0 py-3 px-4 rounded-3" placeholder="Your Email"
+                  required>
               </div>
               <div class="mb-4">
-                <textarea class="form-control form-control-lg bg-light border-0 py-3 px-4 rounded-3" rows="5"
-                  placeholder="Your Message" required></textarea>
+                <textarea name="message" class="form-control form-control-lg bg-light border-0 py-3 px-4 rounded-3"
+                  rows="5" placeholder="Your Message" required></textarea>
               </div>
+              <!-- Optional: redirect after submit -->
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+              <input type="hidden" name="_template" value="table">
               <div class="text-center">
                 <button type="submit" class="btn btn-primary w-100 py-3 fs-5 fw-bold rounded-3 shadow-sm"
                   style="background-color: #2b6df2; border: none;">
